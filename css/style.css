@@ -1,0 +1,40 @@
+html {
+    --navbar-color: #15244B;
+    --text-prmary: #FFFFFF;
+    --text-default: #fff;
+    --button-bg: #3F4B6D;
+    --button-primary: #F2BF83;
+    --button-primary--hover: #fcdab2;
+    --bg: #192852;
+    --bg-dark: #15244B;
+    --bg-footer: #0D193A;
+    --swiper-navigation-size: 27px !important;
+  }
+  
+  html body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--bg);
+    color: var(--text-default);
+    font-size: 2vh;
+    height: 100%;
+  }
+  .center {
+    width: 100%;
+  }
+  .logo {
+    width: 100%;
+  }
+  .content {
+    padding: 0 35% 0 35%;
+  }
+  .text {
+    font-size: 4vh;
+    text-align: center;
+  }
+  .cirno {
+    width: 100%;
+  }
+  .fumo {
+    width: 90%;
+    padding: 10%;
+  }
