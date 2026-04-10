@@ -196,7 +196,7 @@ function renderFundings() {
     grid.innerHTML = fundings.map(f => {
         const pct = Math.min(100, Math.round(f.raised / f.goal * 100));
         return `
-        <div class="fund-card" onclick="openModal('funding','${f.id}')" style="cursor:pointer;">
+        <div class="fund-card" data-fund-id="${f.id}" onclick="openModal('funding',${f.id})" style="cursor:pointer;">
             <div class="fund-cover">
                 ${f.cover
                     ? `<img src="${f.cover}" alt="${f.name}">`
