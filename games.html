@@ -375,8 +375,8 @@ function buildModalContent(item, type) {
 ================================================================ */
 function openModal(type, id) {
     const item = type === 'funding'
-        ? fundings.find(f => f.id === id)
-        : games.find(g => g.id === id);
+      ? fundings.find(f => f.id == id)
+      : games.find(g => g.id == id);
     if (!item) return;
 
     document.getElementById('modalContent').innerHTML = buildModalContent(item, type);
