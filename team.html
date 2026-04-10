@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FumoDub — Команда</title>
+    <meta name="description" content="FumoDub | ФумоДаб – Для тех кто хочет смотреть серии любимых сериалов самым первым!">
+    <link rel="shortcut icon" href="./src/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css?v=1">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">
+      <span>FUM</span>
+      <svg class="heart" viewBox="0 0 32 32">
+        <path d="M15.2 8.17947C15.3889 8.43128 15.6852 8.57947 16 8.57947C16.3148 8.57947 16.6111 8.43128 16.8 8.17947C17.4573 7.30307 18.6472 6.22595 20.1728 5.63793C21.6646 5.06297 23.4948 4.94489 25.5528 5.9739C28.1458 7.27042 29.104 9.48525 28.9397 11.9505C28.7711 14.4792 27.4039 17.2613 25.2929 19.3724C23.0795 21.5857 19.2659 25.3965 16.5035 27.4972C16.2244 27.7094 15.8395 27.7071 15.5508 27.4741C12.9979 25.4135 8.86139 21.5267 6.7071 19.3724C4.59602 17.2613 3.22886 14.4792 3.06028 11.9504C2.89593 9.48525 3.85416 7.27042 6.44721 5.9739C8.50523 4.94489 10.3354 5.06297 11.8271 5.63793C13.3528 6.22595 14.5427 7.30308 15.2 8.17947Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <defs>
+    <clipPath id="heartClip">
+      <path d="M6 5.07947C10.6648 2.7471 14.5 5.57947 16 7.57947C17.5 5.57947 21.3352 2.7471 26 5.07947C32 8.07946 30.5 15.5795 26 20.0795C23.8042 22.2752 19.9372 26.1423 17.1088 28.2932C16.4554 28.7901 15.5615 28.7678 14.9227 28.2522C12.33 26.1595 8.16503 22.2445 6 20.0795C1.49998 15.5795 -4.76837e-06 8.07946 6 5.07947Z"/>
+    </clipPath>
+  </defs>
+        <g clip-path="url(#heartClip)">
+        <path d="M2.0426 -19.4543L30.6625 9.16553" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2.0426 -4.45435L30.6625 24.1655" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2.0426 10.5457L30.6625 39.1655" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2.0426 -19.4543L30.6625 9.16553" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2.0426 -4.45435L30.6625 24.1655" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2.0426 10.5457L30.6625 39.1655" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2.0426 -14.4543L30.6625 14.1655" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2.0426 0.545654L30.6625 29.1655" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2.0426 15.5457L30.6625 44.1655" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2.0426 20.5457L30.6625 49.1655" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2.0426 -9.45435L30.6625 19.1655" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2.0426 5.54565L30.6625 34.1655" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2.0426 25.5457L30.6625 54.1655" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        </svg>
+      <span>DUB</span>
+    </h1>
+    <p class="subtitle">Голоса ваших любимых миров: Аниме, Дунхуа и Игры</p>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="index.html#works">Работы</a>
+        <a href="team.html" style="background:var(--accent-blue);color:#192852;">Команда</a>
+        <a href="games.html">Игры</a>
+        <a href="order.html">Заказать</a>
+        <a href="join.html">Вступить</a>
+    </nav>
+</header>
+
+<div class="team-stage">
+
+    <!-- LEFT: вертикальный слайдер -->
+    <aside class="slider-col">
+        <button class="nav-btn up hidden" onclick="scrollSlider(-1)">↑</button>
+        <div class="slider-track" id="sliderCol"></div>
+        <!-- стрелки -->
+        <button class="nav-btn down" onclick="scrollSlider(1)">↓</button>
+        <button class="nav-btn left hidden" onclick="scrollSliderX(-1)">←</button>
+        <button class="nav-btn right" onclick="scrollSliderX(1)">→</button>
+    </aside>
+
+    <!-- CENTER: PNG персонаж -->
+    <main class="char-col">
+        <div class="char-glow"></div>
+        <img class="char-img" id="charImg" src="" alt="" />
+        <div class="char-placeholder" id="charPh" style="display:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <circle cx="12" cy="7" r="4"/>
+                <path d="M5.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/>
+            </svg>
+            <p>PNG персонажа</p>
+        </div>
+    </main>
+
+    <!-- RIGHT: инфо-панель -->
+    <aside class="info-col" id="infoCol">
+
+        <div class="name-block">
+            <h2 id="infoName"></h2>
+            <span class="role-tag" id="infoRole"></span>
+        </div>
+        <div style="display: flex; gap: 10px">
+          <div class="action-row" id="playRow">
+              <button class="play-btn" id="playBtn" onclick="togglePlay()">
+                  <svg class="icon-play"  viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="icon-pause" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+              </button>
+              <span class="play-label">Play</span>
+          </div>
+          <div class="social-icons" id="infoSocials"></div>
+        </div>
+
+        <div class="wave-row">
+            <div class="waveform" id="waveform"></div>
+            <span class="voice-time" id="voiceTime">0:00</span>
+        </div>
+
+        <div class="desc-block">
+            <p id="infoDesc"></p>
+        </div>
+
+    </aside>
+</div>
+
+<footer>
+    &copy; 2026 FumoDub. Любовь зрителей защищена авторским правом.
+</footer>
+
+<script>
+    const members = [
+        {
+            name:    "S4NN3R",
+            role:    "Основатель / Даббер",
+            desc:    "Основатель команды FumoDub. Отвечает за общее направление проектов, подбор материала и руководство проектами. Является двигателем вселенной без которого вселенная бы уже схлопнулась.",
+            avatar:  "./src/team/s4nn3r.jpg",
+            png:     "./src/team/char/billi.png",
+            socials: [{ url:"https://t.me/s4nn3r", icon:"tg", label:"Telegram" }, { url:"https://vk.com/s4nn3r", icon:"vk", label:"VK" }],
+            voice:   null
+        },
+        {
+            name:    "MakiShima",
+            role:    "Даббер",
+            desc:    "Профессиональная актриса озвучки. Днём актриса дубляжа, а ночью яростный враг соседей. В каждую роль вкладывает душу и характер.",
+            avatar:  "./src/team/makishima.jpg",
+            png:     "./src/team/char/neko.jpeg",
+            socials: [],
+            voice:   null
+        },
+        {
+            name:    "Mr_Lentay",
+            role:    "Даббер / Технарь",
+            desc:    "Гроза спиддаба, готов пойти на всё что бы выпустить серию в срок, даже если сидит в машине на парковке",
+            avatar:  "./src/team/mr_lentay.jpg",
+            png:     "./src/team/char/len.png",
+            socials: [],
+            voice:   null
+        },
+        {
+            name:    "Cridesgar",
+            role:    "Даббер",
+            desc:    "Милый пирожок. Притворяется невинной, пока не возьмёт микрофон...",
+            avatar:  "./src/team/cridesgar.jpg",
+            png:     "./src/team/char/cridesgar.png",
+            socials: [],
+            voice:   null
+        },
+        {
+            name:    "Hikki",
+            role:    "Даббер / Технарь",
+            desc:    "Вечно присмерти, но готов делать серии до победного!",
+            avatar:  "./src/team/hikki.jpg",
+            png:     "./src/team/char/hikkipov.png",
+            socials: [],
+            voice:   null
+        },
+        {
+            name:    "Servantr",
+            role:    "Администратор соц. сетей",
+            desc:    "Самыя главный фанат Fumo, за оригинальную плюшку готов убить, лучше не злить его в наших соц. сетях.",
+            avatar:  "./src/team/servantr.jpg",
+            png:     "./src/team/char/tewi.png",
+            socials: [],
+            voice:   null
+        },
+    ];
+
+    const ICONS = {
+        tg: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 1 0 24 12 12 12 0 0 0 11.944 0zm3.163 7.077-4.575 9.46c-.306.632-.694.79-1.062.79-.35 0-.69-.14-.956-.43L6.47 14.6l-1.257-1.255c-.37-.37-.37-.97 0-1.34l4.34-3.65c.09-.077.12-.22.063-.33-.057-.11-.187-.158-.31-.117L4.9 10.74c-.6.21-1.22-.13-1.38-.72-.16-.59.19-1.2.78-1.38l10.04-3.44c.51-.18 1.04.18.97.72l-.003.025z"/></svg>`,
+        vk: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-.804-1.49.398v1.578c0 .354-.112.566-1.044.566-1.538 0-3.245-.93-4.443-2.664C6.56 12.54 6 10.05 6 9.5c0-.343.12-.663.476-.663h1.745c.353 0 .488.16.624.54.688 1.98 1.844 3.713 2.32 3.713.177 0 .258-.08.258-.52V10.03c-.057-1.005-.59-1.09-.59-1.447 0-.21.17-.422.44-.422h2.74c.298 0 .4.158.4.498v2.673c0 .296.133.4.216.4.177 0 .325-.104.65-.43 1.01-1.132 1.73-2.875 1.73-2.875.096-.248.298-.478.652-.478h1.745c.524 0 .638.27.524.637-.218.99-2.34 4.003-2.34 4.003-.186.302-.252.437 0 .775.177.254.757.778 1.144 1.249.71.836 1.253 1.537 1.4 2.023.135.478-.115.72-.524.72z"/></svg>`,
+        yt:  `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>`,
+    };
+
+    let cur = 0, audio = null, playing = false, demoT = null;
+
+    function buildSlider() {
+        const col = document.getElementById('sliderCol');
+        col.innerHTML = '';
+        members.forEach((m, i) => {
+            const el = document.createElement('div');
+            el.className = 'slider-item' + (i === cur ? ' active' : '');
+            el.onclick = () => pick(i);
+            el.innerHTML = `
+                <span class="slider-name">${m.name}</span>
+                <div class="slider-dot" style="${m.avatar ? `background-image:url('${m.avatar}')` : ''}"></div>`;
+            col.appendChild(el);
+        });
+    }
+    function scrollSlider(dir) {
+        const container = document.getElementById('sliderCol');
+        const item = container.querySelector('.slider-item');
+    
+        if (!item) return;
+    
+        const scrollAmount = item.offsetHeight + 10; // + gap
+    
+        container.scrollBy({
+            top: dir * scrollAmount,
+            behavior: 'smooth'
+        });
+        
+        setTimeout(updateNavButtons, 300);
+    }
+    const slider = document.getElementById('sliderCol');
+    
+    slider.addEventListener('scroll', updateNavButtons);
+    window.addEventListener('resize', updateNavButtons);
+    
+    function scrollSliderX(dir) {
+        const container = document.getElementById('sliderCol');
+        const item = container.querySelector('.slider-item');
+    
+        if (!item) return;
+    
+        const scrollAmount = item.offsetWidth + 10;
+    
+        container.scrollBy({
+            left: dir * scrollAmount,
+            behavior: 'smooth'
+        });
+        
+        setTimeout(updateNavButtons, 300);
+    }
+    
+    function pick(i) {
+        const container = document.getElementById('sliderCol');
+        const active = container.children[i];
+        
+        if (active) {
+            active.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }
+        if (i === cur) return;
+        stopAudio();
+        const img = document.getElementById('charImg');
+        const col = document.getElementById('infoCol');
+        img.classList.add('fade-out');
+        col.classList.add('fade-out');
+        setTimeout(() => {
+            cur = i;
+            render(members[i]);
+            img.classList.remove('fade-out');
+            col.classList.remove('fade-out');
+            document.querySelectorAll('.slider-item')
+                .forEach((el, idx) => el.classList.toggle('active', idx === i));
+        }, 370);
+    }
+
+    function render(m) {
+        const img = document.getElementById('charImg');
+        const ph  = document.getElementById('charPh');
+        if (m.png) {
+            img.src = m.png; img.alt = m.name;
+            img.style.display = ''; ph.style.display = 'none';
+        } else {
+            img.style.display = 'none'; ph.style.display = 'flex';
+        }
+        document.getElementById('infoName').textContent = m.name;
+        document.getElementById('infoRole').textContent = m.role;
+        document.getElementById('infoDesc').textContent = m.desc;
+        document.getElementById('infoSocials').innerHTML =
+            m.socials.map(s =>
+                `<a href="${s.url}" class="soc-btn" title="${s.label}" target="_blank" rel="noopener">${ICONS[s.icon]||''}</a>`
+            ).join('');
+    
+        // Показываем плеер только если есть голос
+        const actionRow = document.getElementById('playBtn').closest('.action-row');
+        const waveRow   = document.getElementById('waveform').closest('.wave-row');
+        if (m.voice) {
+            actionRow.style.display = '';
+            waveRow.style.display   = '';
+            buildWave();
+        } else {
+            actionRow.style.display = 'none';
+            waveRow.style.display   = 'none';
+        }
+    }
+
+    function buildWave() {
+        const h = [32,60,75,44,88,65,40,70,90,54,46,80,58,35,72,94,50,64,38,76,56,86,42,60,68,34,80,90,48,66];
+        document.getElementById('waveform').innerHTML =
+            h.map(v => `<div class="wave-bar" style="height:${v}%"></div>`).join('');
+    }
+
+    function togglePlay() {
+        const m   = members[cur];
+        const btn = document.getElementById('playBtn');
+        const wf  = document.getElementById('waveform');
+
+        if (!m.voice) {
+            if (playing) { stopAudio(); return; }
+            playing = true; btn.classList.add('playing'); wf.classList.add('playing-anim');
+            let t = 0;
+            demoT = setInterval(() => {
+                t++;
+                document.getElementById('voiceTime').textContent =
+                    `${Math.floor(t/60)}:${(t%60).toString().padStart(2,'0')}`;
+                if (t >= 30) stopAudio();
+            }, 1000);
+            return;
+        }
+
+        if (!audio) {
+            audio = new Audio(m.voice);
+            audio.addEventListener('ended', stopAudio);
+            audio.addEventListener('timeupdate', () => {
+                const t = Math.floor(audio.currentTime);
+                document.getElementById('voiceTime').textContent =
+                    `${Math.floor(t/60)}:${(t%60).toString().padStart(2,'0')}`;
+            });
+        }
+        if (playing) {
+            audio.pause(); playing = false;
+            btn.classList.remove('playing'); wf.classList.remove('playing-anim');
+        } else {
+            audio.play(); playing = true;
+            btn.classList.add('playing'); wf.classList.add('playing-anim');
+        }
+    }
+
+    function stopAudio() {
+        if (audio) { audio.pause(); audio.currentTime = 0; audio = null; }
+        if (demoT)  { clearInterval(demoT); demoT = null; }
+        playing = false;
+        document.getElementById('playBtn').classList.remove('playing');
+        document.getElementById('waveform').classList.remove('playing-anim');
+        document.getElementById('voiceTime').textContent = '0:00';
+    }
+
+    function updateNavButtons() {
+        const container = document.getElementById('sliderCol');
+    
+        const isHorizontal = window.innerWidth <= 900; // как у тебя в адаптиве
+    
+        const maxScrollTop = container.scrollHeight - container.clientHeight;
+        const maxScrollLeft = container.scrollWidth - container.clientWidth;
+    
+        const scrollTop = container.scrollTop;
+        const scrollLeft = container.scrollLeft;
+    
+        const upBtn = document.querySelector('.nav-btn.up');
+        const downBtn = document.querySelector('.nav-btn.down');
+        const leftBtn = document.querySelector('.nav-btn.left');
+        const rightBtn = document.querySelector('.nav-btn.right');
+    
+        // вертикальный режим
+        if (!isHorizontal) {
+            if (scrollTop <= 5) {
+                upBtn.classList.add('hidden');
+            } else {
+                upBtn.classList.remove('hidden');
+            }
+    
+            if (scrollTop >= maxScrollTop - 5) {
+                downBtn.classList.add('hidden');
+            } else {
+                downBtn.classList.remove('hidden');
+            }
+        }
+    
+        // горизонтальный режим (мобилка)
+        if (isHorizontal) {
+            if (scrollLeft <= 5) {
+                leftBtn.classList.add('hidden');
+            } else {
+                leftBtn.classList.remove('hidden');
+            }
+    
+            if (scrollLeft >= maxScrollLeft - 5) {
+                rightBtn.classList.add('hidden');
+            } else {
+                rightBtn.classList.remove('hidden');
+            }
+        }
+    }
+
+
+    buildSlider();
+    render(members[0]);
+    updateNavButtons();
+</script>
+</body>
+</html>
