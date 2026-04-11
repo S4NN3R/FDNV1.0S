@@ -180,7 +180,7 @@ function updateFundingAmounts() {
         const pct = Math.min(100, Math.round(f.raised / f.goal * 100));
 
         // находим карточку по id
-        const card = document.querySelector(`[onclick*="'${f.id}'"]`);
+        const card = document.querySelector(`[data-fund-id="${String(f.id)}"]`);
         if (!card) return;
 
         const fill    = card.querySelector('.fund-bar-fill');
