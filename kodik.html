@@ -1,1 +1,71 @@
-<iframe src="" id="kodik-player" width="610" height="370" frameborder="0" allowfullscreen allow="autoplay *; fullscreen *"></iframe>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Kodik Player Button</title>
+<style>
+  body {
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  #playBtn {
+    background: #ff3c3c;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  #playBtn:hover {
+    background: #ff2020;
+  }
+
+  #playerBlock {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<button id="playBtn">▶ Смотреть</button>
+
+<div id="playerBlock">
+  <iframe
+    src=""
+    id="kodik-player"
+    width="610"
+    height="370"
+    frameborder="0"
+    allowfullscreen
+    allow="autoplay *; fullscreen *">
+  </iframe>
+</div>
+
+<script>
+const button = document.getElementById("playBtn");
+const playerBlock = document.getElementById("playerBlock");
+
+button.addEventListener("click", function () {
+    playerBlock.style.display = "block";
+    button.style.display = "none";
+
+    const iframe = document.getElementById("kodik-player").contentWindow;
+
+    iframe.postMessage({
+        key: "kodik_player_api",
+        value: {
+            method: "play"
+        }
+    }, "*");
+});
+</script>
+
+</body>
+</html>
